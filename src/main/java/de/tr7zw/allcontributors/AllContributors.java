@@ -142,7 +142,7 @@ public class AllContributors extends AbstractMojo {
 	private void addContributor(StringBuilder builder, SourceData data, Contributor cont) {
 		builder.append("    <td align=\"center\">");
 		builder.append("<a href=\"" + cont.getProfile() + "\">");
-		builder.append("<img src=\"" + cont.getAvatar_url() + "\" width=\"100px;\" alt=\"\"/><br />");
+		builder.append("<img src=\"" + cont.getAvatar_url() + "\" width=\"" + data.getImageSize() + "px;\" alt=\"\"/><br />");
 		builder.append("<sub><b>" + cont.getName() + "</b></sub></a><br />");
 		boolean first = true;
 		for (String contribution : cont.getContributions()) {

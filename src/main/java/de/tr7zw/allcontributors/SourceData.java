@@ -7,14 +7,10 @@ public class SourceData {
 
 	private String projectName;
 	private String projectOwner;
-	private String[] files;
-	private int imageSize;
+	private int imageSize = 100;
 	private Contributor[] contributors;
-	private String repoType;
 	private int contributorsPerLine = 7;
-	private String repoHost;
-	private String commitConvention;
-	private boolean skipCi = true;
+	private String repoHost = "https://github.com";
 
 	@Data
 	public static class Contributor {

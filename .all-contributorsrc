@@ -1,9 +1,6 @@
 {
   "projectName": "all-contributors-maven",
   "projectOwner": "tr7zw",
-  "files": [
-    "README.md"
-  ],
   "imageSize": 100,
   "contributors": [
     {
@@ -26,8 +23,6 @@
       ]
     }
   ],
-  "repoType": "github",
   "contributorsPerLine": 7,
-  "repoHost": "https://github.com",
-  "skipCi": true
+  "repoHost": "https://github.com"
 }

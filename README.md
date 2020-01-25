@@ -42,6 +42,37 @@ Uses the [.all-contributorsrc](.all-contributorsrc) file to generate the [``Cont
 
 ```
 
+# Config
+Not all config values the normal CLI Configuration has are supported!
+- [x] ``projectName``
+- [x] ``projectOwner``
+- [ ] ``repoType`` (Duplicated by repoHost?)
+- [x] ``repoHost``
+- [x] ``files`` (Can be configured via [Maven property](#maven-properties))
+- [x] ``imageSize``
+- [x] ``commit`` (When the normal ``https://img.shields.io/badge/all_contributors-`` badge part is found, it will be updated. It won't be generated)
+- [ ] ``commitConvention`` (?)
+- [x] ``contributorsPerLine``
+- [x] ``badgeTemplate`` (All ``https://img.shields.io/badge/all_contributors-`` badges will be updated. Just modify the ``orange.svg?style=flat-square`` part)
+- [ ] ``contributorTemplate`` (TODO?)
+- [ ] ``types`` (TODO?)
+- [x] ``contributors``
+
+
+## Maven Properties
+The default values should be fine for most projects, but can be changed via
+````
+                        <configuration>
+                            <readme>CUSTOM_README.md</readme>
+                            [...]
+                        </configuration>
+````
+in the ``<execution>`` xml block.
+### Default Values
+- ``basedir`` = ``${project.basedir}``
+- ``readme`` = ``README.md``
+- ``srcFile`` = ``.all-contributorsrc``
+
 # Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -58,6 +89,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
 
 This project follows the [all-contributors](https://allcontributors.org) specification.
 Contributions of any kind are welcome!
