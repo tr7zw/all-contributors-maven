@@ -1,4 +1,4 @@
-# all-contributors-maven
+# All Contributors-Maven
 (Unofficial) AllContributors implementation for Maven
 
 [![Build Status](https://ci.codemc.org/buildStatus/icon?job=tr7zw%2Fall-contributors-maven)](https://ci.codemc.org/job/Tr7zw/job/all-contributors-maven/)
