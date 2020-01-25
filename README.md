@@ -11,11 +11,11 @@ Uses the [.all-contributorsrc](.all-contributorsrc) file to generate the [``Cont
 
 ```
     <!-- CodeMC -->
-    <repository>
+    <pluginRepository>
       <id>codemc-repo</id>
-      <url>https://repo.codemc.org/repository/maven-snapshots/</url>
+      <url>https://repo.codemc.org/repository/maven-public/</url>
       <layout>default</layout>
-    </repository>
+    </pluginRepository>
 
 
     <!-- Run during build -->

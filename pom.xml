@@ -47,14 +47,14 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
-  <repositories>
+  <pluginRepositories>
     <!-- CodeMC -->
-    <repository>
+    <pluginRepository>
       <id>codemc-repo</id>
-      <url>https://repo.codemc.org/repository/maven-snapshots/</url>
+      <url>https://repo.codemc.org/repository/maven-public/</url>
       <layout>default</layout>
-    </repository>
-  </repositories>
+    </pluginRepository>
+  </pluginRepositories>
   <build>
     <defaultGoal>clean install</defaultGoal>
     <plugins>
