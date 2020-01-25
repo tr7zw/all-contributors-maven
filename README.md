@@ -1,4 +1,5 @@
 # All Contributors-Maven
+
 (Unofficial) AllContributors implementation for Maven
 
 [![Build Status](https://ci.codemc.org/buildStatus/icon?job=tr7zw%2Fall-contributors-maven)](https://ci.codemc.org/job/Tr7zw/job/all-contributors-maven/)
@@ -6,10 +7,9 @@
 
 Uses the [.all-contributorsrc](.all-contributorsrc) file to generate the [``Contributors``](#contributors-%e2%9c%a8) block in the [README.md](README.md) during a Maven build/via Maven call.
 
+## Maven
 
-# Maven
-
-```
+```xml
     <!-- CodeMC -->
     <pluginRepository>
       <id>codemc-repo</id>
@@ -42,8 +42,10 @@ Uses the [.all-contributorsrc](.all-contributorsrc) file to generate the [``Cont
 
 ```
 
-# Config
+## Config
+
 Not all config values the normal CLI Configuration has are supported!
+
 - ✅ ``projectName``
 - ✅ ``projectOwner``
 - ❌ ``repoType`` (Duplicated by repoHost?)
@@ -64,24 +66,29 @@ Not all config values the normal CLI Configuration has are supported!
 - ✅``contributors.x.contributions``
 
 ### Added Config values
+
 - ✅ ``contributors.x.links`` An optional mapping from ``contributors.x.contributions`` to URLs
 
-
 ## Maven Properties
+
 The default values should be fine for most projects, but can be changed via
-````
+
+````xml
                         <configuration>
                             <readme>CUSTOM_README.md</readme>
                             [...]
                         </configuration>
 ````
+
 in the ``<execution>`` xml block.
+
 ### Default Values
+
 - ``basedir`` = ``${project.basedir}``
 - ``readme`` = ``README.md``
 - ``srcFile`` = ``.all-contributorsrc``
 
-# Contributors ✨
+## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -97,7 +104,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
 
 This project follows the [all-contributors](https://allcontributors.org) specification.
 Contributions of any kind are welcome!
