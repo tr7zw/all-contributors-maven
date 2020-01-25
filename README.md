@@ -13,7 +13,7 @@ Uses the [.all-contributorsrc](.all-contributorsrc) file to generate the [``Cont
     <!-- CodeMC -->
     <repository>
       <id>codemc-repo</id>
-      <url>https://repo.codemc.org/repository/maven-public/</url>
+      <url>https://repo.codemc.org/repository/maven-snapshots/</url>
       <layout>default</layout>
     </repository>
 
@@ -56,6 +56,7 @@ Uses the [.all-contributorsrc](.all-contributorsrc) file to generate the [``Cont
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
 
 
 
