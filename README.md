@@ -44,19 +44,19 @@ Uses the [.all-contributorsrc](.all-contributorsrc) file to generate the [``Cont
 
 # Config
 Not all config values the normal CLI Configuration has are supported!
-- [x] ``projectName``
-- [x] ``projectOwner``
-- [ ] ``repoType`` (Duplicated by repoHost?)
-- [x] ``repoHost``
-- [x] ``files`` (Can be configured via [Maven property](#maven-properties))
-- [x] ``imageSize``
-- [x] ``commit`` (When the normal ``https://img.shields.io/badge/all_contributors-`` badge part is found, it will be updated. It won't be generated)
-- [ ] ``commitConvention`` (?)
-- [x] ``contributorsPerLine``
-- [x] ``badgeTemplate`` (All ``https://img.shields.io/badge/all_contributors-`` badges will be updated. Just modify the ``orange.svg?style=flat-square`` part)
-- [ ] ``contributorTemplate`` (TODO?)
-- [ ] ``types`` (TODO?)
-- [x] ``contributors``
+- ✅ ``projectName``
+- ✅ ``projectOwner``
+- ❌ ``repoType`` (Duplicated by repoHost?)
+- ✅ ``repoHost``
+- ✅ ``files`` (Can be configured via [Maven property](#maven-properties))
+- ✅ ``imageSize``
+- ✅ ``commit`` (When the normal ``https://img.shields.io/badge/all_contributors-`` badge part is found, it will be updated. It won't be generated)
+- ❌ ``commitConvention`` (?)
+- ✅ ``contributorsPerLine``
+- ✅ ``badgeTemplate`` (All ``https://img.shields.io/badge/all_contributors-`` badges will be updated. Just modify the ``orange.svg?style=flat-square`` part)
+- ❌ ``contributorTemplate`` (TODO?)
+- ❌ ``types`` (TODO?)
+- ✅ ``contributors``
 
 
 ## Maven Properties
