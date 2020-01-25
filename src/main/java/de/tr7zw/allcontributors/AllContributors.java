@@ -18,6 +18,7 @@ import org.apache.maven.plugins.annotations.Parameter;
 import com.google.gson.Gson;
 
 import de.tr7zw.allcontributors.SourceData.Contributor;
+import de.tr7zw.allcontributors.SourceData.CustomType;
 
 /**
  * Goal which updates the allcontributors section in the readme.md
@@ -95,7 +96,7 @@ public class AllContributors extends AbstractMojo {
 			Pattern pattern = Pattern.compile("https://img.shields.io/badge/all_contributors-([0-9]+)-");
 			Matcher matcher = pattern.matcher(readmeData);
 			int i = 0;
-			while(i < offset) {
+			while (i < offset) {
 				matcher.find();
 				i++;
 			}
@@ -103,7 +104,7 @@ public class AllContributors extends AbstractMojo {
 				readmeData = readmeData.substring(0, matcher.start(1)) + data.getContributors().length
 						+ readmeData.substring(matcher.end(1), readmeData.length());
 				offset++;
-			}else {
+			} else {
 				break;
 			}
 		}
@@ -142,7 +143,8 @@ public class AllContributors extends AbstractMojo {
 	private void addContributor(StringBuilder builder, SourceData data, Contributor cont) {
 		builder.append("    <td align=\"center\">");
 		builder.append("<a href=\"" + cont.getProfile() + "\">");
-		builder.append("<img src=\"" + cont.getAvatar_url() + "\" width=\"" + data.getImageSize() + "px;\" alt=\"\"/><br />");
+		builder.append(
+				"<img src=\"" + cont.getAvatar_url() + "\" width=\"" + data.getImageSize() + "px;\" alt=\"\"/><br />");
 		builder.append("<sub><b>" + cont.getName() + "</b></sub></a><br />");
 		boolean first = true;
 		for (String contribution : cont.getContributions()) {
@@ -151,19 +153,27 @@ public class AllContributors extends AbstractMojo {
 			} else {
 				builder.append(" ");
 			}
-			addContribiution(builder, data, ContributionType.getType(contribution), cont);
+			addContribiution(builder, data, contribution, cont);
 		}
 		builder.append("</td>\n");
 	}
 
-	private void addContribiution(StringBuilder builder, SourceData data, ContributionType type, Contributor cont) {
-		String url = "#" + type.name() + "-" + cont.getLogin();
-		if (type.getUrl() != null) {
-			url = data.getRepoHost() + "/" + data.getProjectOwner() + "/" + data.getProjectName() + "/"
-					+ type.getUrl().replace("%login%", cont.getLogin());
+	private void addContribiution(StringBuilder builder, SourceData data, String typeString, Contributor cont) {
+		try {
+			ContributionType type = ContributionType.valueOf(typeString);
+			String url = "#" + type.name() + "-" + cont.getLogin();
+			if (type.getUrl() != null) {
+				url = data.getRepoHost() + "/" + data.getProjectOwner() + "/" + data.getProjectName() + "/"
+						+ type.getUrl().replace("%login%", cont.getLogin());
+			}
+			url = cont.getLinks().getOrDefault(type.name(), url);
+			builder.append("<a href=\"" + url + "\" title=\"" + type.getName() + "\">" + type.getEmoji() + "</a>");
+		} catch (IllegalArgumentException ex) {
+			CustomType type = data.getTypes().get(typeString);
+			String url = "#" + typeString + "-" + cont.getLogin();
+			url = cont.getLinks().getOrDefault(typeString, url);
+			builder.append("<a href=\"" + url + "\" title=\"" + type.getDescription() + "\">" + type.getSymbol() + "</a>");
 		}
-		url = cont.getLinks().getOrDefault(type.name(), url);
-		builder.append("<a href=\"" + url + "\" title=\"" + type.getName() + "\">" + type.getEmoji() + "</a>");
 	}
 
 }

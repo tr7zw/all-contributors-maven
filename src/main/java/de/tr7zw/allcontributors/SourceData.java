@@ -14,6 +14,7 @@ public class SourceData {
 	private Contributor[] contributors;
 	private int contributorsPerLine = 7;
 	private String repoHost = "https://github.com";
+	private Map<String, CustomType> types = new HashMap<String, SourceData.CustomType>();
 
 	@Data
 	public static class Contributor {
@@ -23,7 +24,12 @@ public class SourceData {
 		private String profile;
 		private String[] contributions;
 		private Map<String, String> links = new HashMap<String, String>();
-		
+	}
+
+	@Data
+	public static class CustomType {
+		private String symbol;
+		private String description;
 	}
 
 }

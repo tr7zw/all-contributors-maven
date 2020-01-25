@@ -2,6 +2,14 @@
   "projectName": "all-contributors-maven",
   "projectOwner": "tr7zw",
   "imageSize": 100,
+  "contributorsPerLine": 7,
+  "repoHost": "https://github.com",
+  "types": {
+    "custom": {
+      "symbol": "🔭 Custom Types",
+      "description": "Idea for adding custom types with text"
+    }
+  },
   "contributors": [
     {
       "login": "all-contributors",
@@ -28,8 +36,18 @@
       "links": {
         "infra": "https://codemc.io/"
       }
+    },
+    {
+      "login": "Sprax2013",
+      "name": "Sprax2013",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7331598?s=460&v=4",
+      "profile": "https://github.com/Sprax2013",
+      "contributions": [
+        "custom"
+      ],
+      "links": {
+        "custom": "https://github.com/tr7zw/all-contributors-maven/blob/master/.all-contributorsrc"
+      }
     }
-  ],
-  "contributorsPerLine": 7,
-  "repoHost": "https://github.com"
+  ]
 }
