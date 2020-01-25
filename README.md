@@ -90,7 +90,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://allcontributors.org/"><img src="https://avatars1.githubusercontent.com/u/46410174?s=200&v=4" width="100px;" alt=""/><br /><sub><b>all-contributors</b></sub></a><br /><a href="https://github.com/tr7zw/all-contributors-maven/commits?author=all-contributors" title="Documentation">📖</a> <a href="#ideas-all-contributors" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://allcontributors.org/"><img src="https://avatars1.githubusercontent.com/u/46410174?s=200&v=4" width="100px;" alt=""/><br /><sub><b>all-contributors</b></sub></a><br /><a href="https://allcontributors.org/docs/en/overview" title="Documentation">📖</a> <a href="https://allcontributors.org/docs/en/cli/overview" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/sgdc3"><img src="https://avatars3.githubusercontent.com/u/8779252?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Gabriele C.</b></sub></a><br /><a href="https://codemc.io/" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
   </tr>
 </table>

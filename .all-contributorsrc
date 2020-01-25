@@ -11,7 +11,11 @@
       "contributions": [
         "doc",
         "ideas"
-      ]
+      ],
+      "links": {
+        "doc": "https://allcontributors.org/docs/en/overview",
+        "ideas": "https://allcontributors.org/docs/en/cli/overview"
+      }
     },
     {
       "login": "sgdc3",
