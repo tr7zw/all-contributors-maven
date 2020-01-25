@@ -5,7 +5,7 @@
 [![Build Status](https://ci.codemc.org/buildStatus/icon?job=tr7zw%2Fall-contributors-maven)](https://ci.codemc.org/job/Tr7zw/job/all-contributors-maven/)
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-%e2%9c%a8)
 
-Uses the [.all-contributorsrc](.all-contributorsrc) file to generate the [``Contributors``](#contributors-%e2%9c%a8) block in the [README.md](README.md) during a Maven build/via Maven call.
+Uses the [.all-contributorsrc](.all-contributorsrc) file to generate the [``Contributors``](#contributors-) block in the [README.md](README.md) during a Maven build/via Maven call.
 
 ## Maven
 
