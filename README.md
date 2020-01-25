@@ -27,13 +27,13 @@ Uses the [.all-contributorsrc](.all-contributorsrc) file to generate the [``Cont
           <execution>
             <id>update-contributors</id>
             <goals>
-              <goal>allcontributors</goal>
+              <goal>update</goal>
             </goals>
           </execution>
         </executions>
       </plugin>
 
-    <!-- Callable via 'mvn allcontributors:allcontributors' -->
+    <!-- Callable via 'mvn allcontributors:update' -->
       <plugin>
         <groupId>de.tr7zw</groupId>
         <artifactId>allcontributors</artifactId>
@@ -56,5 +56,6 @@ Uses the [.all-contributorsrc](.all-contributorsrc) file to generate the [``Cont
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
 
 
