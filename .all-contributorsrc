@@ -1,0 +1,33 @@
+{
+  "projectName": "all-contributors-maven",
+  "projectOwner": "tr7zw",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "contributors": [
+    {
+      "login": "all-contributors",
+      "name": "all-contributors",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/46410174?s=200&v=4",
+      "profile": "https://allcontributors.org/",
+      "contributions": [
+        "doc",
+        "ideas"
+      ]
+    },
+    {
+      "login": "sgdc3",
+      "name": "Gabriele C.",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/8779252?s=460&v=4",
+      "profile": "https://github.com/sgdc3",
+      "contributions": [
+        "infra"
+      ]
+    }
+  ],
+  "repoType": "github",
+  "contributorsPerLine": 7,
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
