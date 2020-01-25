@@ -23,7 +23,7 @@ import de.tr7zw.allcontributors.SourceData.Contributor;
  * Goal which updates the allcontributors section in the readme.md
  *
  */
-@Mojo(name = "allcontributors", defaultPhase = LifecyclePhase.GENERATE_RESOURCES)
+@Mojo(name = "update", defaultPhase = LifecyclePhase.GENERATE_RESOURCES)
 public class AllContributors extends AbstractMojo {
 
 	private Gson gson = new Gson();

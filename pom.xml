@@ -98,14 +98,6 @@
         <groupId>de.tr7zw</groupId>
         <artifactId>allcontributors</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <executions>
-          <execution>
-            <id>update-contributors</id>
-            <goals>
-              <goal>allcontributors</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
