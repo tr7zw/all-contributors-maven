@@ -20,7 +20,10 @@
       "profile": "https://github.com/sgdc3",
       "contributions": [
         "infra"
-      ]
+      ],
+      "links": {
+        "infra": "https://codemc.io/"
+      }
     }
   ],
   "contributorsPerLine": 7,

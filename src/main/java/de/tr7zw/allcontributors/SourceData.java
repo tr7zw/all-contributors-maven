@@ -1,5 +1,8 @@
 package de.tr7zw.allcontributors;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import lombok.Data;
 
 @Data
@@ -19,6 +22,7 @@ public class SourceData {
 		private String avatar_url;
 		private String profile;
 		private String[] contributions;
+		private Map<String, String> links = new HashMap<String, String>();
 		
 	}
 

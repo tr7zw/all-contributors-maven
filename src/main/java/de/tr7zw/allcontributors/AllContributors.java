@@ -135,7 +135,7 @@ public class AllContributors extends AbstractMojo {
 
 		builder.append("</table>\n");
 		builder.append("<!-- markdownlint-enable -->\n" + "<!-- prettier-ignore-end -->\n"
-				+ "<!-- ALL-CONTRIBUTORS-LIST:END -->\n"); // Footer
+				+ "<!-- ALL-CONTRIBUTORS-LIST:END -->"); // Footer
 		return builder.toString();
 	}
 
@@ -162,6 +162,7 @@ public class AllContributors extends AbstractMojo {
 			url = data.getRepoHost() + "/" + data.getProjectOwner() + "/" + data.getProjectName() + "/"
 					+ type.getUrl().replace("%login%", cont.getLogin());
 		}
+		url = cont.getLinks().getOrDefault(type.name(), url);
 		builder.append("<a href=\"" + url + "\" title=\"" + type.getName() + "\">" + type.getEmoji() + "</a>");
 	}
 

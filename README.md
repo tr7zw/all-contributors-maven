@@ -57,6 +57,14 @@ Not all config values the normal CLI Configuration has are supported!
 - ❌ ``contributorTemplate`` (TODO?)
 - ❌ ``types`` (TODO?)
 - ✅ ``contributors``
+- ✅``contributors.x.login``
+- ✅``contributors.x.name``
+- ✅``contributors.x.avatar_url``
+- ✅``contributors.x.profile``
+- ✅``contributors.x.contributions``
+
+### Added Config values
+- ✅ ``contributors.x.links`` An optional mapping from ``contributors.x.contributions`` to URLs
 
 
 ## Maven Properties
@@ -83,7 +91,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://allcontributors.org/"><img src="https://avatars1.githubusercontent.com/u/46410174?s=200&v=4" width="100px;" alt=""/><br /><sub><b>all-contributors</b></sub></a><br /><a href="https://github.com/tr7zw/all-contributors-maven/commits?author=all-contributors" title="Documentation">📖</a> <a href="#ideas-all-contributors" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/sgdc3"><img src="https://avatars3.githubusercontent.com/u/8779252?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Gabriele C.</b></sub></a><br /><a href="#infra-sgdc3" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://github.com/sgdc3"><img src="https://avatars3.githubusercontent.com/u/8779252?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Gabriele C.</b></sub></a><br /><a href="https://codemc.io/" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
   </tr>
 </table>
 <!-- markdownlint-enable -->
@@ -93,6 +101,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 This project follows the [all-contributors](https://allcontributors.org) specification.
 Contributions of any kind are welcome!
-
-
-
